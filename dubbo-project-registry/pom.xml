@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>dubbo-project</artifactId>
+        <groupId>org.sk.dubbo.project</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <description>配置注册中心项目</description>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>dubbo-project-registry</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>dubbo-project-registry-provider</module>
+        <module>dubbo-rpoject-registry-consumer</module>
+        <module>dubbo-project-registry-api</module>
+    </modules>
+
+    <properties>
+        <dubbu.project.version>1.0.0</dubbu.project.version>
+        <dubbu.version>2.7.8</dubbu.version>
+    </properties>
+
+    <dependencies>
+        <!-- 依赖dubbo -->
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>${dubbu.version}</version>
+        </dependency>
+        <!-- 依赖zookeeper客户端工具curator -->
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-framework</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-recipes</artifactId>
+        </dependency>
+
+<!--        当使用nacos作为注册中心的时候使用 这个包进行注册-->
+        <dependency>
+            <groupId>com.alibaba.nacos</groupId>
+            <artifactId>nacos-client</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+    </dependencies>
+
+
+</project>
