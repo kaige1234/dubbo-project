@@ -11,7 +11,7 @@
 
     <groupId>org.sk.dubbo.project.registry.consumer</groupId>
     <artifactId>dubbo-rpoject-registry-consumer</artifactId>
-
+    <packaging>pom</packaging>
     <dependencies>
         <dependency>
             <groupId>org.sk.dubbo.project.registry.ap</groupId>

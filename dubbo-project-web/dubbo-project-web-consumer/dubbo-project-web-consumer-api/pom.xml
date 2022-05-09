@@ -3,15 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>dubbo-project-web-provider</artifactId>
-        <groupId>org.sk.dubbo.project.web.provider</groupId>
+        <artifactId>dubbo-project-web-consumer</artifactId>
+        <groupId>org.sk.dubbo.project.web.consumer</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.sk.dubbo.project.web.provider.api</groupId>
-    <artifactId>dubbo-project-web-provider-api</artifactId>
-    <description>app 服务之间调用</description>
-    <packaging>jar</packaging>
+
+    <groupId>org.sk.dubbo.project.web.consumer.api</groupId>
+    <artifactId>dubbo-project-web-consumer-api</artifactId>
 
 
 </project>

@@ -11,6 +11,12 @@
 
     <groupId>org.sk.dubbo.project.web.consumer</groupId>
     <artifactId>dubbo-project-web-consumer</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>dubbo-project-web-consumer-api</module>
+        <module>dubbo-project-web-consumer-client</module>
+        <module>dubbo-project-web-consumer-service</module>
+    </modules>
 
 
 </project>

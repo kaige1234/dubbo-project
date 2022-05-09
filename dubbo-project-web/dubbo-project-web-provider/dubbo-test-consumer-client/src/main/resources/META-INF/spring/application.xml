@@ -13,7 +13,6 @@
 
     <dubbo:registry address ="nacos://192.168.1.8:8848" timeout="10000"/>
 
-    <dubbo:reference id="testApiService"
-                     interface="cn.com.dubbo.registry.test.ITestRegistryService" version="1.0.0" />
-
+    <dubbo:reference id="iTestProvider"
+                     interface="cn.com.dubbo.web.provider.api.test.ITestProvider" version="1.0.0"/>
 </beans>

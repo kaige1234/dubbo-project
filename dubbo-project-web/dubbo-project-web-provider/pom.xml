@@ -8,14 +8,16 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>org.sk.dubbo.project.web.provider</groupId>
     <artifactId>dubbo-project-web-provider</artifactId>
     <packaging>pom</packaging>
     <modules>
         <module>dubbo-project-web-provider-service</module>
         <module>dubbo-project-web-provider-api</module>
+        <module>dubbo-project-web-provider-client</module>
+        <module>dubbo-test-consumer-client</module>
     </modules>
+
 
 
 </project>

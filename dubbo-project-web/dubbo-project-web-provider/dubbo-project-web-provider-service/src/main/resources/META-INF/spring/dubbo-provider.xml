@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
        xsi:schemaLocation="http://www.springframework.org/schema/beans        http://www.springframework.org/schema/beans/spring-beans.xsd        http://code.alibabatech.com/schema/dubbo        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
-    <dubbo:application name="dubbo-registry-provider-service"/>
+    <dubbo:application name="dubbo-project-web-provider-service"/>
 
 <!--    <dubbo:registry address="zookeeper://192.168.1.9:2181" timeout="10000" />-->
 
@@ -11,9 +11,9 @@
 
     <dubbo:protocol name="dubbo" port="20881"/>
 
-    <dubbo:service interface="cn.com.dubbo.registry.test.ITestRegistryService" ref="testProviderRegistryServiceImpl" version="2.0.0"/>
+    <dubbo:service interface="cn.com.dubbo.web.provider.api.test.ITestProvider" ref="testProviderImpl" version="1.0.0"/>
 
-    <bean id="testProviderRegistryServiceImpl" class="cn.com.dubbo.registry.provider.test.TestProviderRegistryServiceImpl"/>
+    <bean id="testProviderImpl" class="cn.com.dubbo.web.provider.test.TestProviderImpl" />
 
 
 </beans>

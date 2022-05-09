@@ -17,5 +17,26 @@
         <module>dubbo-project-web-provider</module>
     </modules>
 
+    <properties>
+        <dubbu.version>2.7.8</dubbu.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.nacos</groupId>
+            <artifactId>nacos-client</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+
+
+
+
+
+    </dependencies>
 
 </project>

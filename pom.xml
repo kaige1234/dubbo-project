@@ -12,6 +12,7 @@
         <module>dubbo-project-xml</module>
         <module>dubbo-project-registry</module>
         <module>dubbo-project-web</module>
+        <module>dubbo-test</module>
     </modules>
     <properties>
         <dubbu.project.version>1.0.0</dubbu.project.version>
