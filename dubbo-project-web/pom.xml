@@ -15,6 +15,7 @@
     <modules>
         <module>dubbo-project-web-consumer</module>
         <module>dubbo-project-web-provider</module>
+        <module>dubbo-project-web-common</module>
     </modules>
 
     <properties>
@@ -33,9 +34,11 @@
             <version>1.2.1</version>
         </dependency>
 
-
-
-
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
+        </dependency>
 
     </dependencies>
 

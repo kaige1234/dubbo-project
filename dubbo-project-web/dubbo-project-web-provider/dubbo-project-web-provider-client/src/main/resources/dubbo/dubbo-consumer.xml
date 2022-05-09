@@ -15,11 +15,13 @@
 <!--	<dubbo:registry address ="nacos://192.168.1.8:8848" timeout="10000"/>-->
 <!--	<dubbo:consumer id="cs"  timeout="60000" retries="0" check="false" group="#{dubbops['dubbo.group.name']}" version="1.0.0"/>-->
 <!--	<dubbo:reference id="iTestProvider" interface="cn.com.dubbo.web.provider.api.test.ITestProvider" version="1.0.0"/>-->
-	<dubbo:application name="dubbo-registry-consumer-server"/>
+
+	<util:properties id="dubbops" location="classpath:dubbo.properties"/>
+	<dubbo:application name="#{dubbops['dubbo.application.name']}"/>
 	<!--    使用zookeeper时候需要使用改注册中心-->
 	<!--    <dubbo:registry address="zookeeper://192.168.1.9:2181" timeout="10000"/>-->
 
-	<dubbo:registry address ="nacos://192.168.1.8:8848" timeout="10000"/>
+	<dubbo:registry address ="#{dubbops['dubbo.nacos']}" timeout="10000"/>
 
 	<dubbo:reference id="iTestProvider"
 					 interface="cn.com.dubbo.web.provider.api.test.ITestProvider" version="1.0.0"/>
